@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goblin+One&display=swap');
+
+
+
+html, body {
+    margin: 0;
+    font-family: Open Sans, sans-serif;
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* block with text or news */
+
+main {
+    width: 100%;
+    height: 100%;
+    margin-top: 60px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.main-content {
+    width: 90%;
+    height: 100%;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, 350px);
+    grid-template-rows: repeat(2, 350px);
+
+    display: grid;
+    justify-content: center;
+}
+
+.content {
+    width: 350px;
+    height: 350px;
+    border: 2px solid #9b9b9b;
+    border-radius: 10px;
+    box-shadow: 2px 4px 16px rgb(0 0 0 / 25%);
+    transition: all .3s cubic-bezier(0,0,.5,1);
+    
+}
+
+.content:hover {
+    transform: scale3d(1.01,1.01,1.01);
+}
+
+.img-content {
+    width: 100%;
+    height: 200px;
+
+    border-radius: 10px 10px 0 0;
+}
+
+.articles-1 {background-image: url(img/hello_html_aac5486.jpg);background-size: 100% 120%;}
+.articles-2 {background-image: url(img/car.jpg);background-size: 100% 120%;}
+.articles-3{background-image: url(img/train-1.jpg);background-size: 100% 100%;}
+.articles-4{background-image: url(img/tank.jpg);background-size: 100% 100%;}
+
+.text-content {
+    width: 100%;
+    height: 100px;
+
+    background-color: #fff;
+}
+.text-header {
+    font-size: 18px;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-weight: 600;
+    
+    font-family: 'Goblin One', cursive;
+}
+.text-news {
+    padding-left: 10px;
+    font-size:15px;
+
+    color: #7c7c7c;
+}
+
+.button {
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    margin-top: -4px;
+    border-radius: 0 0 10px 10px;
+
+    background-color: #fff;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.click-to-news {
+    width: 110px; 
+    height: 35px;
+    border-radius: 10px;
+    border: 0px;
+
+    color: #fff;
+    background: #116dff;
+
+    transition-duration: 0.8s;
+}
+
+button:hover{
+    background-color: #fff;
+    border: 1px solid #116dff;
+    color: #116dff;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: 70px;
+    margin-top: 50px;
+    margin-bottom: -20px;
+
+    background-color: #212529;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
